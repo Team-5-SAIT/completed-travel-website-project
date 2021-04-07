@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Home
+  link(rel='stylesheet' href='stylesheets/style_form1.css')
+  script(src='javascripts/script.js')
+// Index page code snippets created by 'Mark Tierney and Oghenegare Uti'
+.container(style='width:100%; display:block; margin:auto;')
+  header.header(style='width:1700px; ')
+    a(href='/')
+      img(src='images/logo.png' alt='logo')
+    h1(style='color:red; ') AGENT MODE
+  nav.menu(style='width:1660px; ')
+    a(href='/' style='margin:15x;') Home
+    a(href='/reg' style='margin:15px;') Register
+    a(href='/contact' style='margin:15px;') Contact Us
+    a(href='/logout' style='margin:15px;') Logout
+  .shadowbo(style='background-color:white; width:100%;') 
+        br
+        br
+        br
+        h1(style='text-align:center; color: black;') Welcome, #{title} !
+        
+        h1 Customers Database:  
+        table(style='width:100%; border: 1px solid black;') 
+          tr 
+           th(style='border: 1px solid black') Customer First Name 
+           th(style='border: 1px solid black') Customer Last Name 
+           th(style='border: 1px solid black') Customer Address
+           th(style='border: 1px solid black') Customer City
+           th(style='border: 1px solid black') Customer Province
+           th(style='border: 1px solid black') Customer Postal Code
+           th(style='border: 1px solid black') Customer Phone
+           th(style='border: 1px solid black') Customer Email
+          each customer in customers
+           tr(style='border: 1px solid black')#customer
+            td(style='border: 1px solid black') #{customer.fname}
+            td(style='border: 1px solid black') #{customer.lname}
+            td(style='border: 1px solid black') #{customer.address}
+            td(style='border: 1px solid black') #{customer.city}
+            td(style='border: 1px solid black') #{customer.province}
+            td(style='border: 1px solid black') #{customer.pcode}
+            td(style='border: 1px solid black') #{customer.phone}
+            td(style='border: 1px solid black') #{customer.email}
+        h1 Agents Database:  
+        table(style='width:25%; border: 1px solid black;') 
+          tr 
+           th(style='border: 1px solid black') Agent UserName 
+           th(style='border: 1px solid black') Agent Password 
+          each account in accounts
+           tr(style='border: 1px solid black')#account
+            td(style='border: 1px solid black') #{account.username}
+            td(style='border: 1px solid black') #{account.password}
+  footer#foot
+    | &copy;2021 Travel experts All Rights Reserved.
+
+ 

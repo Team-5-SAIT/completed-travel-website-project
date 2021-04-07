@@ -1,0 +1,314 @@
+/*This css file was specifically created to style the register form on the Register page..Designed by 'Mark Tierney', Dzianis, and Oghenegare Uti'*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"); /* Url to import "poppins" font-family from google Fonts*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  font-weight: bold;
+  background: thistle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.container .header {
+  padding: 0;
+  border: 2px solid turquoise;
+  width: 1208px;
+  height: 90px;
+  margin-left: 5%;
+}
+
+.shadow-container {
+  width: 1207px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(../images/eiffel-tower-2906526_1280.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: auto;
+}
+
+.shadowbox {
+  width: 1207px;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 5.1%;
+  background-image: url(../images/aeroplane.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: auto;
+}
+
+.shadowbox2 {
+  width: 1207px;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 5.1%;
+  background-image: url(../images/maldives2.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: auto;
+}
+
+.menu {
+  background: #e6821e;
+  padding: 6px 0 6px 40px;
+  font-size: 15px;
+  width: 1169px;
+  margin-left: 5.1%;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+aside {
+  float: left;
+  width: 120px;
+  padding: 30px 0 0 40px;
+}
+
+h2 {
+  margin: 0px;
+  color: brown;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Arial Narrow", "Myriad pro";
+}
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: blue;
+}
+
+.header {
+  padding: 0;
+  border: 2px solid turquoise;
+  width: 1206px;
+  height: 90px;
+  background-color: turquoise;
+}
+
+.header img {
+  float: left;
+  top: 50px;
+  width: 80px;
+  height: 80px;
+}
+.header h1 {
+  position: relative;
+  color: white;
+  top: 8px;
+  left: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-1 {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  left: 35%;
+  line-height: 1.2em;
+  height: 100vh;
+  width: 400px;
+  background: thistle;
+  padding-right: 15px;
+  outline: 0;
+  border-radius: 10px;
+  border: 0px solid rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+  opacity: 0.9;
+}
+
+.container-2 {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  left: 35%;
+  line-height: 1.2em;
+  height: 60vh;
+  width: 400px;
+  background: thistle;
+  padding-right: 15px;
+  outline: 0;
+  border-radius: 10px;
+  border: 0px solid rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+  opacity: 0.9;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: green;
+}
+
+.my-form {
+  padding: 20px;
+}
+
+#pfform {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#plform {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+#pemail {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+#paddress {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#pprovince {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#ppostal {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#pphone {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#pcity {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#puser {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+
+#ppassword {
+  display: none;
+  margin: 30px;
+  color: gray;
+  font-family: Times new roman;
+  font-size: 0.8rem;
+}
+.my-form input:focus {
+  background: turquoise;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;
+}
+
+#msg {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: red;
+}
+
+#error {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: red;
+}
+
+.my-form input[type="text"],
+.my-form textarea,
+.my-form input[type="email"],
+.my-form input[type="password"] {
+  padding: 8px;
+  width: 100%;
+  border-radius: 5%;
+  border: none;
+}
+
+.my-form input[type="text"] :focus,
+.my-form textarea :focus,
+.my-form input[type="email"]:focus,
+.my-form input[type="password"]:focus {
+  border-color: turquoise;
+  outline: 0;
+  box-shadow: 0 0 0 4px pink;
+}
+
+button[type="reset"],
+button[type="submit"],
+button[type="button"] {
+  background: indigo;
+  color: white;
+  border: none;
+  padding: 0.5rem, 0.7rem;
+  cursor: pointer;
+  outline: 0;
+  border-radius: 5px;
+}
+
+#foot {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  background: #d6d6d6;
+  text-align: left;
+  font-size: 11px;
+  color: #444444;
+  position: static;
+  width: 1207px;
+  margin-left: 5.2%;
+}
+
+#Ad-foot {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  background: #d6d6d6;
+  text-align: left;
+  font-size: 11px;
+  color: #444444;
+  position: static;
+  width: 1207px;
+  margin-left: 0%;
+}

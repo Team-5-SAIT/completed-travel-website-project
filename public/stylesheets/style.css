@@ -1,0 +1,598 @@
+/* Style sheet codes written by 'Oghenegare- Uti, Mark Tierney, and Dzianis Tsishchenka*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"); /* Url to import "poppins" font-family from google Fonts*/
+
+html,
+body {
+  background-color: thistle;
+  font-family: "poppins", sans-serif;
+}
+
+.header {
+  padding: 0;
+  border: 2px solid turquoise;
+  width: 100%;
+  height: 90px;
+}
+
+#description {
+  width: 800px;
+  padding: 0.8rem;
+  margin-left: 15%;
+  color: white;
+  background: purple;
+  text-align: center;
+  align-items: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.header img {
+  float: left;
+  top: 50px;
+  width: 80px;
+  height: 80px;
+}
+.header h1 {
+  position: relative;
+  color: white;
+  top: 8px;
+  left: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.container {
+  width: 1206px;
+  height: 100%;
+  margin: 0 auto;
+  background: #00ced1;
+  overflow: auto;
+}
+
+.menu {
+  background: #e6821e;
+  padding: 6px 0 6px 40px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+aside {
+  float: left;
+  width: 120px;
+  padding: 30px 0 0 40px;
+  overflow: auto;
+}
+
+h2 {
+  margin: 0px;
+  color: brown;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Arial Narrow", "Myriad pro";
+}
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: blue;
+}
+.form {
+  border: 1px solid gray;
+  background-color: cornsilk;
+  padding: 5px;
+  width: 190px;
+  height: 460px;
+  margin: 10px;
+  float: left;
+}
+label {
+  margin-left: 0 auto;
+}
+input {
+  display: flexbox;
+}
+input p {
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  font-size: 0.2em;
+  margin: 14px;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  float: left;
+  width: 390px;
+  height: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.gallery img:hover {
+  border: 1.5px solid red;
+  cursor: pointer;
+}
+
+.desc {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  border: solid black 1px;
+  background-color: lightgray;
+}
+.desc:hover {
+  background-color: yellow;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.desc1 {
+  color: green;
+  text-align: center;
+}
+.desc1:hover {
+  background-color: rosybrown;
+}
+.desc2 {
+  color: red;
+  text-align: center;
+}
+.desc2:hover {
+  background-color: rosybrown;
+}
+.gallery2 {
+  margin: 12px;
+  margin-top: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  float: right;
+  width: 300px;
+  position: relative;
+}
+
+.agent-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.agents {
+  margin: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  float: left;
+  width: 390px;
+  height: 100%;
+}
+
+.agents img {
+  width: 400px;
+  height: 400px;
+  justify-content: space-evenly;
+}
+
+.desc-agent {
+  padding: 8px;
+  text-align: center;
+  background-color: gold;
+  font-weight: bold;
+}
+
+.gallery2 img {
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.gallery2 img:hover {
+  opacity: 0.3;
+}
+
+.contact {
+  margin: 17px;
+  width: 400px;
+  text-align: justify;
+  border: 1px solid wheat;
+  background-color: rosybrown;
+}
+ul {
+  list-style-type: square;
+}
+p {
+  font-family: Georgia;
+  color: purple;
+}
+#foot {
+  padding: 0;
+
+  background: #d6d6d6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  font-size: 11px;
+  color: #444444;
+  display: block;
+}
+aside {
+  border: 1px solid turquoise;
+  margin: 50px;
+  background-color: grey;
+  margin-top: 20px;
+  float: right;
+  width: 100px;
+  height: 170px;
+  overflow: scroll;
+}
+.imgframe {
+  float: right;
+  margin: 200px;
+  width: 200px;
+}
+
+.clip-image {
+  clip-path: polygon(
+    100% 57%,
+    100% 100%,
+    81% 100%,
+    71% 0%,
+    91% 0%
+  ); /* styling/effect not in use any more*/
+}
+
+/* styling syntaxes for CONTACT US form ------------------------------------------------------------------------*/
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../images/pink\ bridge.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+/*This section is for the form element------------------------------------------------------------------------------*/
+.contact-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  align-content: flex-start;
+}
+
+.contact-form {
+  position: relative;
+  background: rgb(216, 205, 215);
+  width: 400px;
+  padding: 60px;
+  height: 350px;
+  margin-left: 35%;
+  opacity: 0.9;
+}
+
+.contact-form .row {
+  width: 100%;
+  display: flex;
+}
+
+.contact-form .input50 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.contact-form .input100 {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+  position: relative;
+  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #111;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0;
+  resize: none;
+}
+
+.contact-form .row textarea {
+  height: 150px;
+}
+.contact-form .row input[type="submit"] {
+  background-color: #1b206e;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  border: 0;
+  cursor: pointer;
+}
+
+/*section for form element ends here------------------------------------------------------------------*/
+
+section .contact-container {
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000;
+}
+
+section .contact-container .contactinfo {
+  position: absolute;
+  top: 0px;
+  margin-bottom: 10px;
+  margin-top: 0.5px;
+  width: 400px;
+  height: calc(104% - 5px);
+  font-size: 12px;
+  margin-left: 2%;
+  background: #11073d;
+  opacity: 0.8;
+  z-index: 1;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+section .contact-container .contactinfo img {
+  width: 15px;
+  height: 15px;
+}
+
+section .contact-container .contactinfo h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px;
+  margin-top: 1px;
+}
+
+section .contact-container .contactinfo h3 {
+  color: white;
+  margin-top: 2px;
+}
+
+/*---------------------------------------------------------------------*/
+section .contact-container .contactinfo2 img {
+  width: 15px;
+  height: 15px;
+}
+
+section .contact-container .contactinfo2 h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px;
+  margin-top: 1px;
+}
+
+#listagents {
+  margin-left: 36%;
+  color: greenyellow;
+}
+
+#listagents:hover {
+  color: cornsilk;
+}
+
+section .contact-container .contactinfo2 h3 {
+  color: white;
+  margin-top: 2px;
+}
+
+section .contact-container .contactinfo2 li {
+  margin-left: 1%;
+}
+
+/*-------------------------------------------------------------------------*/
+
+section .contact-container .info {
+  position: relative;
+  margin-bottom: 240px;
+  margin-top: 0px;
+  line-height: 19px;
+}
+
+section .contact-container .info span {
+  position: relative;
+  margin-top: 1px;
+  line-height: 11px;
+}
+
+section .contact-container .info a p {
+  color: white;
+}
+
+section .contact-container .info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 2px 0;
+  margin-left: 10%;
+  cursor: pointer;
+  align-items: flex-start;
+  line-height: 0.2px;
+}
+
+section .contact-container .info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+section .contact-container .info li span:nth-child(1) img {
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+section .contact-container .info li span:img {
+  width: 15px;
+  height: 15px;
+}
+
+section .contact-container .info li span:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+section .contact-container .info li span:nth-child(1) img,
+section .contact-container .info li span:nth-child(2) {
+  opacity: 1;
+}
+
+section .contact-container .SclMedia {
+  position: absolute;
+  display: flex;
+  margin-top: 2px;
+}
+
+section .contact-container .SclMedia li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+section .contact-container .SclMedia li a {
+  text-decoration: none;
+}
+
+section .contact-container .SclMedia li a img {
+  filter: invert(1);
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+}
+
+section .contact-container .SclMedia li:hover a img {
+  opacity: 1;
+}
+
+/* Admin portal Css styles*/
+#Adminportal {
+  margin: 20px;
+}
+
+#Adminportal h2 {
+  margin-left: 12%;
+  color: whitesmoke;
+  font-size: 12px;
+}
+/* Package selection form on bottom of index page */
+
+#wrap {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8px;
+  padding: 5px;
+  background: #fff;
+  font-family: AvenirLTStd, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  border: solid black 2px;
+  border-radius: 5%;
+}
+#wrap .cont_details fieldset,
+.cont_order fieldset {
+  margin: 10px;
+  padding: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+#wrap legend {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+#wrap .cont_details input {
+  margin-bottom: 10px;
+  color: #000;
+}
+#wrap .input1:hover,
+.input1:active {
+  font: solid;
+}
+#wrap label {
+  display: block;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+}
+#wrap label.inlinelabel {
+  display: inline;
+}
+#wrap .cont_order input {
+  margin-bottom: 5px;
+}
+#wrap .cont_order p {
+  padding-top: 5px;
+}
+
+#wrap input[type="radio"] {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#wrap input[type="text"]:hover,
+#wrap input[type="text"]:active {
+  background-color: #faf398;
+}
+
+#wrap input#submit {
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#wrap div#totalPrice {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ff0;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+  border: solid black 2px;
+}
+
+#wrap label.radiolabel {
+  font-weight: normal;
+  display: inline;
+}

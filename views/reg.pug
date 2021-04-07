@@ -1,0 +1,94 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Register
+  link(rel='stylesheet' href='stylesheets/style_form.css')
+.container
+  header.header
+    a(href='/')
+      img(src='images/logo.png' alt='logo')
+    if (!user)
+      h1 Welcome to Travel experts
+    if (user)
+      h1(style='color:red; ') AGENT MODE
+  nav.menu
+    a(href='/' style='margin:15px;') Home
+    a(href='/reg' style='margin:15px;') Register
+    a(href='/contact' style='margin:15px;') Contact Us
+    if (!user)
+      a(href="/login" style=' margin-left: 65%;') Agent Login
+    if (user)
+      a(href='/auth' style='margin:15px;') Customers Database
+      a(href="/logout" style=' margin-left: 50%;') Logout
+  .shadow-container
+    .container-1
+      //-  container/box of the main form starts here.
+      #error
+      form#form.my-form(action='/reg' method='POST')
+        h1(style='color: red;') #{title1}
+        .form-group
+          label First Name:
+          input#myname(type='text' name='fname' onfocus="document.getElementById('pform').style.display= 'contents'" onblur="document.getElementById('pform').style.display= 'none'" autocomplete='off'  required='')
+          
+        br
+        .form-group
+          label Last Name:
+          input#myname(type='text' name='lname' onfocus="document.getElementById('pform').style.display= 'contents'" onblur="document.getElementById('pform').style.display= 'none'" autocomplete='off'  required='')
+          
+        br
+        .form-group
+          label Address:
+          input#myname(type='text' name='address' onfocus="document.getElementById('pform').style.display= 'contents'" onblur="document.getElementById('pform').style.display= 'none'" autocomplete='off'  required='')
+          
+        br
+        .form-group
+          label City:
+          input#myname(type='text' name='city' onfocus="document.getElementById('pform').style.display= 'contents'" onblur="document.getElementById('pform').style.display= 'none'" autocomplete='off'  required='')
+          
+        br
+        .form-group
+          label Canadian province:
+          input#myprovince(type='text' list='provinces' onfocus="document.getElementById('pprovince').style.display= 'contents'" onblur="document.getElementById('pprovince').style.display= 'none'" name='province' required='')
+          datalist#provinces
+            option Alberta
+            option British Columbia
+            option Manitoba
+            option New Brunswick
+            option Newfoundland and Labrador
+            option Nova Scotia
+            option Northwest territories
+            option Nunavut
+            option Ontario
+            option Prince Edward Island
+            option Quebec
+            option Saskatchewan
+            option Yukon
+          
+        br
+        .form-group
+          label Postal Code: 
+          input#mypostal(type='text'  onfocus="document.getElementById('ppostal').style.display= 'contents'"  onblur="document.getElementById('ppostal').style.display= 'none'" name='pcode')
+          
+          #msg
+        br
+        .form-group
+          label Phone:
+          input#myemail(type='text' onfocus="document.getElementById('pemail').style.display= 'contents'" onblur="document.getElementById('pemail').style.display= 'none'" name='phone' required='')
+          br
+          
+        br
+        .form-group
+          label Email:
+          input#myemail(type='email' onfocus="document.getElementById('pemail').style.display= 'contents'" onblur="document.getElementById('pemail').style.display= 'none'" name='email' required='')
+          br
+          
+        br
+        br
+        button#submit(type='submit' style='font-size:20px; margin:2px;' onclick="return confirm('Do you want to submit the form?')")
+          | Submit
+        button#reset(type='reset' style='font-size:20px; margin:2px;' onclick="return confirm('Are you sure you want to reset?')")
+          | Reset
+      br
+  footer#foot
+    | &copy;2021 Brava travel experts &nbsp; All Rights Reserved.
+script(src='javascripts/event.js')

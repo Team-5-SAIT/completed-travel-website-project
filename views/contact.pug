@@ -1,0 +1,110 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Contact
+  link(rel='stylesheet' href='stylesheets/style.css')
+  script(src='javascripts/script.js')
+// Index page code snippets created by 'Mark Tierney, Dzianis Tsishchenka and Oghenegare Uti'
+.container
+  header.header
+    a(href='/')
+      img(src='images/logo.png' alt='logo')
+    if (!user)
+      h1 Welcome to Travel experts
+    if (user)
+      h1(style='color:red; ') AGENT MODE
+  nav.menu
+    a(href='/' style='margin:15px;') Home
+    a(href='/reg' style='margin:15px;') Register
+    a(href='/contact' style='margin:15px;') Contact Us
+    if (!user)
+      a(href="/login" style=' margin-left: 65%;') Agent Login
+    if (user)
+      a(href='/auth' style='margin:15px;') Customers Database
+      a(href="/logout" style=' margin-left: 50%;') Logout
+  section
+    .contact-container
+      .contactinfo
+        a(href='http://localhost:3000/agents.html')
+          p#listagents See our list of agents
+        h3 Calgary address
+        ul.info
+          li
+            span
+              img(src='images/placeholder.png' alt='')
+            span
+              | 560 Hemdon SAIT Road, Calgary, AB 
+              br
+              |                            T5J 4Y6
+          li
+            span
+              img(src='images/gmail icon.png' alt='')
+            span
+              a(href='mailto:TravelExperts1@project.ca')
+                p TravelExperts1@project.ca
+          li
+            span
+              img(src='images/phone-call.png' alt='')
+            span
+              a(href='tel:+1 574 727 8933')
+                p +1 574 727 8933
+          br
+          .contactinfo2
+            h3 Okotoks address
+            ul.info
+              li
+                span
+                  img(src='images/placeholder.png' alt='')
+                span
+                  | 28 Tofield SAIT Road, Okotoks, AB 
+                  br
+                  |                            T7Y 4B9
+              li
+                span
+                  img(src='images/gmail icon.png' alt='')
+                span
+                  a(href='mailto:TravelExperts2@project.ca')
+                    p TravelExperts23@project.ca
+              li
+                span
+                  img(src='images/phone-call.png' alt='')
+                span
+                  a(href='tel:+1 533 788 8973')
+                    p +1 533 788 8973
+                    br
+          ul.SclMedia
+            li
+              a(href='https://instagram.com')
+                img(src='images/instagram (1).png' alt='')
+            li
+              a(href='https://linkedin.ca')
+                img(src='images/linkedin.png' alt='')
+            li
+              a(href='https://facebook.com')
+                img(src='images/facebook.png' alt='')
+            li
+              a(href='https://twitter.com')
+                img(src='images/twitter.png' alt='')
+            li
+              a(href='https://gmail.com')
+                img(src='images/google-plus.png' alt='')
+      .contact-form
+        form
+          .row
+            .input50
+              input(type='text' placeholder='First Name')
+            .input50
+              input(type='text' placeholder='Last Name')
+          .row
+            .input50
+              input(type='text' placeholder='Email')
+            .input50
+              input(type='text' placeholder='Subject')
+          .row
+            .input100
+              textarea(placeholder='message')
+          .row
+            .input100
+              input(type='submit' value='Send')
+  footer#foot
+    | &copy;2021 Travel experts &nbsp; All Rights Reserved.

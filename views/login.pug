@@ -1,0 +1,52 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Home
+  link(rel='stylesheet' href='stylesheets/style_form1.css')
+  script(src='javascripts/script.js')
+// Index page code snippets created by 'Mark Tierney and Oghenegare Uti'
+.container
+  header.header
+    a(href='/')
+      img(src='images/logo.png' alt='logo')
+    h1 Welcome to Travel experts
+  nav.menu
+    a(href='/' style='margin:15x;') Home
+    a(href='/reg' style='margin:15px;') Register
+    a(href='/contact' style='margin:15px;') Contact Us
+    // &nbsp syntax used to create spaces between the nav bar elements
+  .shadowbox2
+    .container-2
+      #error
+      form#form.my-form(action='/login' method='POST')
+        .form-group
+          label Username:
+          input#myuser(type='text' name='username' placeholder='Enter Username' required='')
+        .form-group
+          label Password:
+          input(type='password' name='password' placeholder='Enter Password' required='')
+          h2(style='color:red; text-align:left;') #{title}
+        button#Login(type='submit' style='font-size:20px; margin:2px;')
+          | Sign-in
+        button#reset(type='reset' style='font-size:20px; margin:2px;')
+          | Reset
+    
+      
+      form#form.my-form(action='/register' method='POST')
+        .form-group
+          br
+          label(style='font-size:20px; margin:2px; color:black;') Please register below:
+          h2(style='color: red;') #{title2}
+          br
+          label Username:
+          input#myuser(type='text' name='username' placeholder='Enter Username' required='')
+        .form-group
+          label Password:
+          input(type='password' name='password' placeholder='Enter Password' required='')
+          h2(style='color:red; text-align:left;') #{title}
+        button#Login(type='submit' style='font-size:20px; margin:2px;')
+          | Register
+        button#reset(type='reset' style='font-size:20px; margin:2px;')
+          | Reset
+  footer#foot
+    | &copy;2021 Travel experts All Rights Reserved.
